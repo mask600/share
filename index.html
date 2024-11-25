@@ -221,7 +221,9 @@
       downloadUrl = window.location.href.slice(questionMarkIndex+1);
       if(!isWeiXin()) {
         window.location.href = downloadUrl
-      } else if(isWeiXin() && location.host !== 'isidr1234z.github.io') {
+      } 
+      if(isWeiXin() && location.host !== 'isidr1234z.github.io') {
+        console.log('https://isidr1234z.github.io/share/?url=' + downloadUrl, '123')
         window.location.href = 'https://isidr1234z.github.io/share/?url=' + downloadUrl
       }
     }
