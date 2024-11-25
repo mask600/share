@@ -214,6 +214,7 @@
     document.getElementById('overlay').style.display = 'block'
   }
   (function($) {
+    console.log(location.host, 'location.host')
     var currentUrl = window.location.href;
     var questionMarkIndex = currentUrl.indexOf('=');
     
