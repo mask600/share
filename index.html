@@ -219,6 +219,7 @@
     var questionMarkIndex = currentUrl.indexOf('=');
     console.log('https://isidr1234z.github.io/share/?url=' + downloadUrl, '123')
     if(isWeiXin() && location.host !== 'isidr1234z.github.io') {
+      downloadUrl = window.location.href.slice(questionMarkIndex+1);
       window.location.href = 'https://isidr1234z.github.io/share/?url=' + downloadUrl
     }
     if(questionMarkIndex && (currentUrl.includes('www') || currentUrl.includes('new-vip'))) {
